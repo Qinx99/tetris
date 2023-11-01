@@ -249,18 +249,29 @@
       var dir = '';
       switch (c) {
         case 37:
-          this.move('L');
+          if (this.isActive === 1) {
+            this.move('L');
+          }
           break;
         case 38:
-          this.move('RT');
+          if (this.isActive === 1) {
+            this.move('RT');
+          }
+
           break;
         case 39:
-          this.move('R');
+          if (this.isActive === 1) {
+            this.move('R');
+          }
+
           break;
         case 40:
-          this.move('D');
+          if (this.isActive === 1) {
+            this.move('D');
+          }
+
           break;
-        case 27: //esc: pause
+        case 27: //esc:
           this.togglePause();
           break;
         default:
@@ -286,7 +297,7 @@
     },
     incLevel: function () {
       this.level++;
-      this.speed = this.speed - 75;
+      this.speed = this.speed - 100;
       this.setInfo('level');
     },
     incLines: function (num) {
