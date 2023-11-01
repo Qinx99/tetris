@@ -97,7 +97,7 @@ body {
     color: white;
   }
 
-  embed{
+  iframe{
     position: absolute;
     overflow: hidden;
   }
