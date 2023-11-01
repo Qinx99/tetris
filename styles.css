@@ -96,4 +96,18 @@ body {
     text-decoration: none;
     color: white;
   }
+
+  iframe {
+    position: absolute;
+    overflow: hidden;
+  }
+
+  #music {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    font-size: 12px;
+    left: 80%;
+    transform: translateX(-80%);
+  }
   
